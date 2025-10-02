@@ -21,8 +21,8 @@ pkg install python-pip
 pkg install git
 pip install colorama 
 pip install requests
-git clone https://github.com/CRYPTOLORD25/Crypto-banning-tools.git
-cd Crypto-banning-tools
+git clone https://github.com/CRYPTOLORD25/Updated-ban
+cd Updated-ban
 python ban.py
 ```
 
@@ -30,9 +30,9 @@ python ban.py
 
 ```bash
 sudo apt update && sudo apt install python3 python3-pip git
-pip3 install colorama python-dotenv
-git clone https://github.com/CRYPTOLORD25/Crypto-banning-tools.git
-cd Crypto-bannig-tools
+pip3 install colorama requests 
+https://github.com/CRYPTOLORD25/Updated-ban
+cd Updated-ban
 python3 ban.py
 ```
 
