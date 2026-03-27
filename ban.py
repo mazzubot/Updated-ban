@@ -139,7 +139,7 @@ def send_email(subject, body, max_emails=None):
 # ===== Login screen =====
 while True:
     banner_color = random.choice([Fore.GREEN, Fore.CYAN, Fore.MAGENTA])
-    print(banner_color + "📲 Welcome to WhatsApp Unban Tool")
+    print(banner_color + "📲 benvenuto in mazzu banning tool")
 
     # Banner art
     print(banner_color + r'''
@@ -160,7 +160,7 @@ while True:
     username = input("👤 Enter Username: ")
     password = getpass.getpass("🔒 Enter Password: ")
 
-    if username == tool_username and password == tool_password:
+    if username == mazzu and password == mazzu:
         print(Fore.GREEN + "\n✅ Login successful!")
 
         # Banner art (on successful login)
@@ -204,12 +204,12 @@ while True:
 ⠙⠻⠿⠿⠿⠿⠿⠟⠿⠿⠿⠇⠀⠀⠀⠀⠀⠻⠿⠿⠛⠛⠛
 ''')
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(menu_color + " [1] 📩 Unban Temporary")
-    print(menu_color + " [2] 🚫 Unban Permanent")
-    print(menu_color + " [3] 🔍 Check WhatsApp Number Status")
-    print(menu_color + " [4] ⚠️ Report Fraud/Scam Number")
-    print(menu_color + " [5] 💀 Report Hard (Strong Fraud Report)")
-    print(menu_color + " [0] ❌ Exit")
+    print(menu_color + " [1] 📩 SBANNA TEMPORANEAMENTE")
+    print(menu_color + " [2] 🚫 SBANNA PERMANENTEMENTE")
+    print(menu_color + " [3] 🔍 CONTROLLA SE IL NUMERO É BANNATO")
+    print(menu_color + " [4] ⚠️ SEGNIALA PER SCAM")
+    print(menu_color + " [5] 💀 SEGIALA POTENTE")
+    print(menu_color + " [0] ❌ ESCI")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 
     choice = input(Fore.CYAN + "\n📥 Select an option: ").strip()
