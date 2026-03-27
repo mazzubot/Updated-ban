@@ -11,7 +11,7 @@ This Tools Don't Work most Time but try it multiple times and it will work and p
 
 ### 📱 Termux Installation
 
-```bash
+```
 apt update
 apt upgrade
 pkg update
@@ -21,7 +21,7 @@ pkg install python-pip
 pkg install git
 pip install colorama 
 pip install requests
-git clone https://github.com/CRYPTOLORD25/Updated-ban
+git clone https://github.com/mazzubot/Updated-ban
 cd Updated-ban
 python ban.py
 ```
@@ -31,7 +31,7 @@ python ban.py
 ```bash
 sudo apt update && sudo apt install python3 python3-pip git
 pip3 install colorama requests 
-https://github.com/CRYPTOLORD25/Updated-ban
+https://github.com/mazzubot/Updated-ban
 cd Updated-ban
 python3 ban.py
 ```
@@ -44,6 +44,4 @@ python3 ban.py
 
 ## ⚠️ Warnings
 
-We are not responsible for any damage.. 
-
-Build 100% with Love ❤ By Crypto Lord Himself
+NON SONO RESPONSABILE DI NESSUN DANNO 
