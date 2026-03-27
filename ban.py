@@ -136,32 +136,7 @@ def send_email(subject, body, max_emails=None):
 
     return (success, fail)
 
-# ===== Login screen =====
-while True:
-    banner_color = random.choice([Fore.GREEN, Fore.CYAN, Fore.MAGENTA])
-    print(banner_color + "📲 benvenuto in mazzu banning tool")
-
-    # Banner art
-    print(banner_color + r'''
-⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀⠀⠀⠀
-⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀
-⠀⠀⠀⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇⠀
-⠀⠀⢤⣀⣀⣀⠀⠀⢸⣷⡄⠀⣁⣀⣤⣴⣿⣿⣿⣆
-⠀⠀⠀⠀⠹⠏⠀⠀⠀⣿⣧⠀⠹⣿⣿⣿⣿⣿⡿⣿
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠿⠇⢀⣼⣿⣿⠛⢯⡿⡟
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠦⠴⢿⢿⣿⡿⠷⠀⣿⠀
-⠀⠀⠀⠀⠀⠀⠀⠙⣷⣶⣶⣤⣤⣤⣤⣤⣶⣦⠃⠀
-⠀⠀⠀⠀⠀⠀⠀⢐⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⠟
-''')
-
-    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    username = input("👤 Enter Username: ")
-    password = getpass.getpass("🔒 Enter Password: ")
-
-    if username == mazzu and password == mazzu:
-        print(Fore.GREEN + "\n✅ Login successful!")
+ print(Fore.GREEN + "\n✅ Login successful!")
 
         # Banner art (on successful login)
         print(banner_color + r'''
@@ -180,10 +155,7 @@ while True:
         typewriter(Fore.YELLOW + "This tool was made by Crypto Lord alone.\n", delay=0.06)
         break
     else:
-        print(Fore.RED + "\n❌ Incorrect credentials, try again...")
-        time.sleep(2)
-
-# ===== Main Menu =====
+        print(Fore.RED + 
 while True:
     clear()
     menu_color = random.choice([Fore.BLUE, Fore.YELLOW, Fore.CYAN])
