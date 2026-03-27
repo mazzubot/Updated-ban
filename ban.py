@@ -136,7 +136,6 @@ def send_email(subject, body, max_emails=None):
 
     return (success, fail)
 
- print(Fore.GREEN + "\n✅ Login successful!")
 
         # Banner art (on successful login)
         print(banner_color + r'''
@@ -152,15 +151,8 @@ def send_email(subject, body, max_emails=None):
 ⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⠟
 ''')
-        typewriter(Fore.YELLOW + "This tool was made by Crypto Lord alone.\n", delay=0.06)
-        break
-    else:
-        print(Fore.RED + 
-while True:
-    clear()
-    menu_color = random.choice([Fore.BLUE, Fore.YELLOW, Fore.CYAN])
-    print(menu_color + "🛠️ WhatsApp Tool - Main Menu")
-    print(menu_color + r'''
+ 
+print(menu_color + r'''
 ⠀⠀⠀    ⣠⣶⣶⣶⣶
 ⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
