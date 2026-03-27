@@ -177,7 +177,7 @@ while True:
 ⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⠟
 ''')
-        typewriter(Fore.YELLOW + "This tool was made by Crypto Lord alone.\n", delay=0.06)
+        typewriter(Fore.YELLOW + "BY MAZZU.\n", delay=0.06)
         break
     else:
         print(Fore.RED + "\n❌ Incorrect credentials, try again...")
