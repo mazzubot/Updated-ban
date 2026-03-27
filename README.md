@@ -36,10 +36,6 @@ cd Updated-ban
 python3 ban.py
 ```
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=4000&pause=1000&color=0A7BE1&center=true&vCenter=true&width=600&lines=Crypto+Lord+Banning+Tools;Coded+by+Crypto+Lord+himself" alt="Typing SVG" />
-</p>
-
 ---
 
 ## ⚠️ Warnings
