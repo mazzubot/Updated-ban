@@ -136,6 +136,32 @@ def send_email(subject, body, max_emails=None):
 
     return (success, fail)
 
+# ===== Login screen =====
+while True:
+    banner_color = random.choice([Fore.GREEN, Fore.CYAN, Fore.MAGENTA])
+    print(banner_color + "📲 Welcome to WhatsApp Unban Tool")
+
+    # Banner art
+    print(banner_color + r'''
+⠛⠛⣿⣿⣿⣿⣿⡷⢶⣦⣶⣶⣤⣤⣤⣀⠀⠀⠀
+⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀
+⠀⠀⠀⠉⠉⠉⠙⠻⣿⣿⠿⠿⠛⠛⠛⠻⣿⣿⣇⠀
+⠀⠀⢤⣀⣀⣀⠀⠀⢸⣷⡄⠀⣁⣀⣤⣴⣿⣿⣿⣆
+⠀⠀⠀⠀⠹⠏⠀⠀⠀⣿⣧⠀⠹⣿⣿⣿⣿⣿⡿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠿⠇⢀⣼⣿⣿⠛⢯⡿⡟
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠦⠴⢿⢿⣿⡿⠷⠀⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠙⣷⣶⣶⣤⣤⣤⣤⣤⣶⣦⠃⠀
+⠀⠀⠀⠀⠀⠀⠀⢐⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⠟
+''')
+
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    username = input("👤 Enter Username: ")
+    password = getpass.getpass("🔒 Enter Password: ")
+
+    if username == tool_username and password == tool_password:
+        print(Fore.GREEN + "\n✅ Login successful!")
 
         # Banner art (on successful login)
         print(banner_color + r'''
@@ -151,14 +177,39 @@ def send_email(subject, body, max_emails=None):
 ⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⢿⣿⣿⣿⣿⠟
 ''')
- 
+        typewriter(Fore.YELLOW + "This tool was made by Crypto Lord alone.\n", delay=0.06)
+        break
+    else:
+        print(Fore.RED + "\n❌ Incorrect credentials, try again...")
+        time.sleep(2)
 
-    print(menu_color + " [1] 📩 SBANNA TEMPORANEAMENTE")
-    print(menu_color + " [2] 🚫 SBANNA PERMANENTEMENTE")
-    print(menu_color + " [3] 🔍 CONTROLLA SE IL NUMERO É BANNATO")
-    print(menu_color + " [4] ⚠️ SEGNIALA PER SCAM")
-    print(menu_color + " [5] 💀 SEGIALA POTENTE")
-    print(menu_color + " [0] ❌ ESCI")
+# ===== Main Menu =====
+while True:
+    clear()
+    menu_color = random.choice([Fore.BLUE, Fore.YELLOW, Fore.CYAN])
+    print(menu_color + "🛠️ WhatsApp Tool - Main Menu")
+    print(menu_color + r'''
+⠀⠀⠀    ⣠⣶⣶⣶⣶
+⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠻⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣴⣶⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣧
+⠀⠀⠀⠀⣼⣿⣿⣿⡿⣿⣿⣆⠀⠀⠀⠀⠀⠀⣠⣴⣶⣤⡀⠀
+⠀⠀⠀⢰⣿⣿⣿⣿⠃⠈⢻⣿⣦⠀⠀⠀⠀⣸⣿⣿⣿⣿⣷⠀
+⠀⠀⠀⠘⣿⣿⣿⡏⣴⣿⣷⣝⢿⣷⢀⠀⢀⣿⣿⣿⣿⡿⠋⠀
+⠀⠀⠀⠀⢿⣿⣿⡇⢻⣿⣿⣿⣷⣶⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀
+⠀⠀⠀⠀⢸⣿⣿⣇⢸⣿⣿⡟⠙⠛⠻⣿⣿⣿⣿⡇⠀⠀⠀⠀
+⣴⣿⣿⣿⣿⣿⣿⣿⣠⣿⣿⡇⠀⠀⠀⠉⠛⣽⣿⣇⣀⣀⣀⠀
+⠙⠻⠿⠿⠿⠿⠿⠟⠿⠿⠿⠇⠀⠀⠀⠀⠀⠻⠿⠿⠛⠛⠛
+''')
+    print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
+    print(menu_color + " [1] 📩 Unban Temporary")
+    print(menu_color + " [2] 🚫 Unban Permanent")
+    print(menu_color + " [3] 🔍 Check WhatsApp Number Status")
+    print(menu_color + " [4] ⚠️ Report Fraud/Scam Number")
+    print(menu_color + " [5] 💀 Report Hard (Strong Fraud Report)")
+    print(menu_color + " [0] ❌ Exit")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 
     choice = input(Fore.CYAN + "\n📥 Select an option: ").strip()
