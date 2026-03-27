@@ -13,12 +13,12 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 # ===== Tool login =====
-tool_username = "admin"
-tool_password = "admins"
+tool_username = "mazzu"
+tool_password = "mazzu123321"
 
 # ===== Your personal Gmail credentials =====
 gmail_accounts = [
-    {"email": "managerhimself032@gmail.com", "password": "inagtgypnpyweleu"},
+    {"email": "mallomallo6767@gmail.com", "password": "mallomallo"},
     {"email": "arsheeqarsheeqq@gmail.com", "password": "pkkqfactxwkpvzgc"},
     {"email": "unknownhimself6@gmail.com", "password": "uupfjdufriwrdgop"},
     {"email": "cryptolord25ss@gmail.com", "password": "lczszqjxovvbuxco"},
