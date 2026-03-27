@@ -1,4 +1,4 @@
-# Crypto Lord Ban Tool
+# mazzu Ban Tool
 
 This is a Python CLI tool that allows you to simulate banning a phone number (permanently or temporarily) Using the greatest Command easily on termux 
 
@@ -45,3 +45,6 @@ python3 ban.py
 ## ⚠️ Warnings
 
 NON SONO RESPONSABILE DI NESSUN DANNO 
+
+## subscribe 
+ https://whatsapp.com/channel/0029Vb8qv97J3juwDKlY9L31
