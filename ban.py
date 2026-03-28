@@ -204,15 +204,15 @@ while True:
 ⠙⠻⠿⠿⠿⠿⠿⠟⠿⠿⠿⠇⠀⠀⠀⠀⠀⠻⠿⠿⠛⠛⠛
 ''')
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    print(menu_color + " [1] 📩 Unban Temporary")
-    print(menu_color + " [2] 🚫 Unban Permanent")
-    print(menu_color + " [3] 🔍 Check WhatsApp Number Status")
-    print(menu_color + " [4] ⚠️ Report Fraud/Scam Number")
-    print(menu_color + " [5] 💀 Report Hard (Strong Fraud Report)")
+    print(menu_color + " [1] 📩 SBANNA PER UN TOT DI TEMPO")
+    print(menu_color + " [2] 🚫 SBANNA PER SEMPRE")
+    print(menu_color + " [3] 🔍  CHECK BAN")
+    print(menu_color + " [4] ⚠️ SEGNIALA SCAM NUMBER")
+    print(menu_color + " [5] 💀 SEGIALA FORTE")
     print(menu_color + " [0] ❌ Exit")
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
 
-    choice = input(Fore.CYAN + "\n📥 Select an option: ").strip()
+    choice = input(Fore.CYAN + "\n📥 SCEGLI UN OPZIONE: ").strip()
 
     if choice in ["1", "2"]:
         unban_type = "Temporary" if choice == "1" else "Permanent"
@@ -220,14 +220,14 @@ while True:
         print(menu_color + f"🔄 Unban {unban_type} Selected\n")
 
         while True:
-            phone = input("📞 Enter WhatsApp number with country code (e.g., +2348123456789): ").strip()
+            phone = input("📞 INSERISCI IL NUMERO WHATSAPP CON IL PROFISSO(E.S., +2348123456789): ").strip()
             if re.match(r"^\+\d{10,15}$", phone):
                 break
             else:
-                print(Fore.RED + "❌ Invalid format! Only numbers allowed with country code starting with +.")
+                print(Fore.RED + "❌ FORMATO INVALIDO, RICORDATI DI METTERE ORIMA DEL NUMERO +.")
                 time.sleep(1)
 
-        print(f"\n📝 Sending {unban_type} unban request for {phone}...")
+        print(f"\n📝 CARICAMENTO {unban_type} SBAN RICHIESTA PER {phone}...")
         time.sleep(1)
 
         if unban_type == "Temporary":
@@ -272,9 +272,9 @@ With sincere gratitude.
         total_sent = success
         if total_sent > 0:
             print(Fore.GREEN + f"\n🎉 SUCCESS: {unban_type} unban request submitted to {total_sent} addresses.")
-            print("📡 Stay active while WhatsApp reviews your request.\n")
+            print("📡 CONTROLLA TRA UN PAIO DI MINUTI SE SEI ANCORA BANNATO.\n")
         else:
-            print(Fore.RED + "\n❌ Failed to send unban request. Check SMTP credentials and network.\n")
+            print(Fore.RED + "\n❌ ERRORE NEL MANDARE LE RICHIESTE.\n")
 
         input(Fore.CYAN + "\n🔁 Press Enter to return to menu...")
 
