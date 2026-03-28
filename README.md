@@ -26,7 +26,7 @@ cd Updated-ban
 python ban.py
 ```
 
-### 🐧 Kali Linux Installation
+### 🐧 Linux Installation
 
 ```bash
 sudo apt update && sudo apt install python3 python3-pip git
