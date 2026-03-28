@@ -157,8 +157,8 @@ while True:
 ''')
 
     print("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━")
-    username = input("👤 Enter Username: ")
-    password = getpass.getpass("🔒 Enter Password: ")
+    username = input("👤 USERNAME: ")
+    password = getpass.getpass("🔒 PASSWORD: ")
 
     if username == tool_username and password == tool_password:
         print(Fore.GREEN + "\n✅ Login successful!")
